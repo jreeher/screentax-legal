@@ -64,12 +64,12 @@
 
 <main>
 
-  <p><strong>Last updated: March 2025</strong></p>
+  <p><strong>Last updated: October 2026</strong></p>
 
-  <p>Please read these Terms of Service ("Terms") carefully before using the Screen Tax mobile application ("App"). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
+  <p>These Terms of Service ("Terms") govern your use of the Screen Tax mobile application ("App"), which is operated by Invert LLC ("Invert LLC," "we," "us," or "our"). Please read them carefully before using the App. By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
 
   <h2>1. Overview</h2>
-  <p>Screen Tax is a financial accountability tool that tracks the time you spend on selected apps and automatically charges your credit card on a weekly basis. Charges are aggregated and donated monthly to a cause you select during onboarding. The App is designed to create financial incentives for reducing screen time.</p>
+  <p>Screen Tax is a financial accountability tool that tracks the time you spend on selected apps and automatically charges your credit card on a monthly basis. Charges are aggregated and, after deduction of payment processing fees and a platform service fee (see Section 5), donated to a cause you select during onboarding. The App is designed to create financial incentives for reducing screen time.</p>
 
   <h2>2. Eligibility</h2>
   <ul>
@@ -85,22 +85,32 @@
     <li><strong>Billable minutes</strong> = Total usage minutes − Free allowance minutes (minimum 0)</li>
     <li><strong>Charge</strong> = (Billable minutes ÷ 60) × Hourly rate</li>
   </ul>
-  <p>Weekly charges are processed automatically every <strong>Saturday at 9:00 PM</strong> local time. Charges below Stripe's minimum transaction amount of <strong>$0.50</strong> are skipped for that week.</p>
+  <p>Charges accumulate over each calendar month. The completed month's total is processed automatically on the <strong>1st at approximately 6:00 AM</strong> local time. If the App cannot run then, the charge is attempted the next time you open it, still for the same month. Charges below the payment processor's minimum transaction amount of <strong>$0.50</strong> are skipped for that month and are not carried forward.</p>
+  <p>Your monthly charge is capped at <strong>$25.00</strong> regardless of usage, as a safety limit against misconfiguration or inaccurate usage data.</p>
 
   <div class="callout">
-    <strong>Important — Uninstall Policy:</strong> Screen Tax protects against charge avoidance by periodically committing your accrued weekly total to our backend. If you uninstall the App before Saturday's charge is processed, the most recently committed weekly total <strong>will still be charged</strong> to your card. By using Screen Tax, you explicitly acknowledge and consent to this policy.
+    <strong>Uninstalling the App:</strong> Charges are initiated by the App on your device. If you uninstall Screen Tax before a month's charge has been processed, that charge will not be collected, and all locally stored data is removed by Android. Charges already processed before uninstalling are not automatically reversed; see Section 6 for refunds.
   </div>
 
   <h2>4. Payment and Card Storage</h2>
   <p>All payment processing is handled by <strong>Stripe</strong>, a third-party payment processor. Screen Tax does not store your full card number, CVV, or billing address. The App retains only your Stripe Customer ID, the last four digits of your card, and your card brand for display purposes.</p>
-  <p>By providing your payment information, you authorize Screen Tax to charge your card on the weekly schedule described above for as long as the App is installed and active, or until you revoke authorization by contacting support.</p>
+  <p>By providing your payment information, you authorize Screen Tax to charge your card on the monthly schedule described above for as long as the App is installed and active, or until you revoke authorization by contacting support.</p>
+  <p>If a charge fails, the App retries it automatically once a day, up to five more times. If every attempt fails, the charge is marked as failed and no further automatic attempts are made; you can still retry it manually from the App's Settings.</p>
+  <p>Screen Tax requires an account, created with an email address and password, to link your payment method across the App and the web dashboard and to restore it if you reinstall. See our <a href="privacy.html">Privacy Policy</a> for how that information is handled.</p>
 
   <h2>5. Donations</h2>
-  <p>During onboarding, you select a donation destination: a general charity fund, PETA, or the NRA Foundation. Your weekly charges are collected and the proceeds are donated in aggregate to your selected organization on a <strong>monthly basis</strong>. Individual weekly charges are not transferred in real time. Screen Tax retains no portion of donation proceeds beyond Stripe's processing fees.</p>
+  <p>During onboarding, you select a donation destination: a general charity fund, PETA, or the NRA Foundation. Your monthly charges are collected and the proceeds are donated in aggregate to your selected organization. Individual monthly charges are not transferred in real time, and Screen Tax does not guarantee specific disbursement timing.</p>
+  <p>Each charge is subject to the following deductions before disbursement:</p>
+  <ul>
+    <li><strong>Payment processing fee</strong> — approximately 2.9% + $0.30 per transaction, charged by our payment processor. Because charges are billed monthly, this fixed fee is incurred once a month.</li>
+    <li><strong>Platform service fee</strong> — 10% of the gross charge amount, retained by Invert LLC to cover infrastructure, maintenance, and operating costs</li>
+  </ul>
+  <p>The remaining balance is disbursed to your selected destination. For example, on a $5.00 charge, approximately $0.45 in processing fees and $0.50 in platform service fees are deducted, and the remaining ~$4.05 is donated.</p>
+  <p>Amounts donated through Screen Tax are <strong>not tax-deductible to you</strong>. Donations are made by Screen Tax in aggregate, not by you individually, and you will not receive a donation receipt.</p>
   <p>We reserve the right to substitute a comparable organization if a designated recipient becomes unavailable or ceases to accept donations.</p>
 
   <h2>6. Refunds</h2>
-  <p>Because charges are made on your behalf as donations, refunds are generally not available once a payment has been processed. If you believe a charge was made in error, contact us at <a href="mailto:jreeher@outlook.com">jreeher@outlook.com</a> within 7 days of the charge and we will review your request.</p>
+  <p>All charges are eligible for a full refund upon request within <strong>7 days</strong> of the original charge date. To request a refund, email <a href="mailto:jordanr@invert-able.com">jordanr@invert-able.com</a> from the address associated with your account. Refund requests submitted after the 7-day window may be considered at Invert LLC's discretion.</p>
 
   <h2>7. App Permissions</h2>
   <p>Screen Tax requires the <strong>Usage Access</strong> permission (PACKAGE_USAGE_STATS) to function. This permission must be granted manually by the user in Android Settings. This data is used solely to calculate charges within the App and is not transmitted to any external server.</p>
@@ -117,7 +127,7 @@
   <p>Screen Tax is provided "as is" without warranties of any kind, express or implied. We do not guarantee that the App will be error-free, uninterrupted, or that usage tracking will be 100% accurate in all circumstances. We are not responsible for charges that result from inaccurate usage data reported by the Android operating system.</p>
 
   <h2>10. Limitation of Liability</h2>
-  <p>To the fullest extent permitted by applicable law, Screen Tax and its developer shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App. Our total liability to you for any claim shall not exceed the total amount charged to your card in the 30 days preceding the claim.</p>
+  <p>To the fullest extent permitted by applicable law, Invert LLC, the operator of Screen Tax, shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App. Our total liability to you for any claim shall not exceed the amount charged to your card in the month to which the claim relates, and in no event more than $25.00.</p>
 
   <h2>11. Changes to These Terms</h2>
   <p>We may update these Terms from time to time. If we make material changes, we will notify you within the App. Continued use of Screen Tax after changes take effect constitutes acceptance of the revised Terms.</p>
@@ -126,12 +136,12 @@
   <p>These Terms are governed by the laws of the State of Illinois, without regard to conflict of law principles.</p>
 
   <h2>13. Contact</h2>
-  <p>Questions about these Terms? Contact us at <a href="mailto:jreeher@outlook.com">jreeher@outlook.com</a>.</p>
+  <p>Questions about these Terms? Contact us at <a href="mailto:jordanr@invert-able.com">jordanr@invert-able.com</a>.</p>
 
 </main>
 
 <footer>
-  &copy; 2025 Screen Tax &mdash; All rights reserved.
+  &copy; 2026 Invert LLC &mdash; Screen Tax. All rights reserved.
 </footer>
 
 </body>
