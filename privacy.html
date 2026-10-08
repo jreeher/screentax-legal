@@ -127,11 +127,6 @@
         <td>Our backend server (Railway) — used to process that charge</td>
       </tr>
       <tr>
-        <td><strong>Donation Preference</strong></td>
-        <td>Your selected donation destination (charity, PETA, or NRA Foundation)</td>
-        <td>On your device and sent to our backend at charge time</td>
-      </tr>
-      <tr>
         <td><strong>Payment History</strong></td>
         <td>Charge timestamps, amounts, and success/failure status</td>
         <td>On your device only (local Room database)</td>
@@ -160,17 +155,16 @@
 
   <h2>3. How We Use Your Information</h2>
   <ul>
-    <li><strong>Processing monthly charges:</strong> When a completed month is charged on the 1st, the amount and your donation destination are sent to our backend to process that charge.</li>
+    <li><strong>Processing monthly charges:</strong> When a completed month is charged on the 1st, the amount is sent to our backend to process that charge.</li>
     <li><strong>Accounts:</strong> Your email address is used to sign you in, to recover your password, and to reconnect your saved payment method if you reinstall the app.</li>
     <li><strong>Notifications:</strong> Your push token is used to notify you about charges, failures, and monthly summaries.</li>
     <li><strong>Diagnostics:</strong> Crash reports are used to find and fix defects in the app.</li>
-    <li><strong>Donations:</strong> Your donation preference is used to direct aggregate donations to your chosen organization.</li>
     <li><strong>App functionality:</strong> Usage data is used solely within the app to calculate charges and display your dashboard.</li>
   </ul>
 
   <h2>4. Third-Party Services</h2>
   <p><strong>Stripe</strong> — We use Stripe to process all payments. When you set up a card, Stripe collects and stores your payment information directly. We receive only a Customer ID and card display info (last 4 digits, brand) in return. Stripe's Privacy Policy is available at <a href="https://stripe.com/privacy" target="_blank">stripe.com/privacy</a>.</p>
-  <p><strong>Google Firebase</strong> — We use Firebase Cloud Messaging to deliver push notifications, Firebase Crashlytics for crash reporting, and Google Analytics for Firebase. Crash reports include your monthly charge amount. They do not include your selected donation destination. Google's privacy practices are described at <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>.</p>
+  <p><strong>Google Firebase</strong> — We use Firebase Cloud Messaging to deliver push notifications, Firebase Crashlytics for crash reporting, and Google Analytics for Firebase. Crash reports include your monthly charge amount. Google's privacy practices are described at <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>.</p>
   <p>We do not use advertising networks or cross-app tracking services.</p>
 
   <h2>5. Data Retention</h2>
