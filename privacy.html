@@ -84,10 +84,10 @@
 
   <p><strong>Last updated: October 2026</strong></p>
 
-  <p>This Privacy Policy explains how Invert LLC, the operator of Screen Tax ("we," "us," or "our"), collects, uses, and protects information when you use our mobile application and web dashboard. We built Screen Tax with a minimal-data philosophy — your detailed screen time data stays on your device.</p>
+  <p>This Privacy Policy explains how Invert LLC, the operator of Screen Tax ("we," "us," or "our"), collects, uses, and protects information when you use our mobile application. We built Screen Tax with a minimal-data philosophy — your detailed screen time data stays on your device.</p>
 
   <div class="callout">
-    <strong>The short version:</strong> Your per-app screen time data never leaves your phone. We do run accounts, so we hold your email address. We also send your per-app settings, a push notification token, and crash diagnostics to servers. Details below.
+    <strong>The short version:</strong> Your per-app screen time data never leaves your phone. We have no user accounts and do not collect your email address or a password. We send only a token identifying your payment customer, your monthly charge amount, and crash diagnostics. Details below.
   </div>
 
   <h2>1. Information We Collect</h2>
@@ -109,17 +109,12 @@
       <tr>
         <td><strong>App Settings</strong></td>
         <td>Which apps you track, free allowance minutes, hourly rates</td>
-        <td>On your device, and synced to our backend server so your settings can be restored if you reinstall or sign in on the web dashboard</td>
-      </tr>
-      <tr>
-        <td><strong>Account Credentials</strong></td>
-        <td>Your email address and a password you choose</td>
-        <td>Our backend server — used to sign you in and to reconnect your saved payment method if you reinstall</td>
+        <td>On your device only</td>
       </tr>
       <tr>
         <td><strong>Payment Identifiers</strong></td>
         <td>Payment processor Customer ID, last four digits of your card, card brand (e.g. Visa)</td>
-        <td>On your device (DataStore) and on our backend server, linked to your account</td>
+        <td>On your device (DataStore). Our backend receives a token naming the Customer ID with each charge request</td>
       </tr>
       <tr>
         <td><strong>Monthly Charge Amount</strong></td>
@@ -130,11 +125,6 @@
         <td><strong>Payment History</strong></td>
         <td>Charge timestamps, amounts, and success/failure status</td>
         <td>On your device only (local Room database)</td>
-      </tr>
-      <tr>
-        <td><strong>Push Notification Token</strong></td>
-        <td>A Firebase Cloud Messaging token identifying your device installation</td>
-        <td>Our backend server — used to send you charge and payment notifications</td>
       </tr>
       <tr>
         <td><strong>Crash &amp; Diagnostic Data</strong></td>
@@ -156,27 +146,26 @@
   <h2>3. How We Use Your Information</h2>
   <ul>
     <li><strong>Processing monthly charges:</strong> When a completed month is charged on the 1st, the amount is sent to our backend to process that charge.</li>
-    <li><strong>Accounts:</strong> Your email address is used to sign you in, to recover your password, and to reconnect your saved payment method if you reinstall the app.</li>
-    <li><strong>Notifications:</strong> Your push token is used to notify you about charges, failures, and monthly summaries.</li>
+    <li><strong>Notifications:</strong> Charge reminders, failures, and monthly summaries are generated on your device.</li>
     <li><strong>Diagnostics:</strong> Crash reports are used to find and fix defects in the app.</li>
     <li><strong>App functionality:</strong> Usage data is used solely within the app to calculate charges and display your dashboard.</li>
   </ul>
 
   <h2>4. Third-Party Services</h2>
   <p><strong>Stripe</strong> — We use Stripe to process all payments. When you set up a card, Stripe collects and stores your payment information directly. We receive only a Customer ID and card display info (last 4 digits, brand) in return. Stripe's Privacy Policy is available at <a href="https://stripe.com/privacy" target="_blank">stripe.com/privacy</a>.</p>
-  <p><strong>Google Firebase</strong> — We use Firebase Cloud Messaging to deliver push notifications, Firebase Crashlytics for crash reporting, and Google Analytics for Firebase. Crash reports include your monthly charge amount. Google's privacy practices are described at <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>.</p>
+  <p><strong>Google Firebase</strong> — We use Firebase Crashlytics for crash reporting and Google Analytics for Firebase. Crash reports include your monthly charge amount. Google's privacy practices are described at <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>.</p>
   <p>We do not use advertising networks or cross-app tracking services.</p>
 
   <h2>5. Data Retention</h2>
   <ul>
     <li>App usage records are stored locally and can be deleted by the user from within the app's Settings screen.</li>
-    <li>Your account record, per-app settings, and payment identifiers are retained on our backend until you request deletion.</li>
+    <li>Our backend keeps no database of its own. Customer and charge records are held by Stripe for transaction and refund purposes.</li>
     <li>Charge records are retained as required for transaction and refund records.</li>
-    <li>If you uninstall the app, local data is deleted automatically by Android and no further charges are initiated. Your backend account record persists until you request its deletion.</li>
+    <li>If you uninstall the app, local data is deleted automatically by Android and no further charges are initiated. Stripe's customer and charge records persist until you request their deletion.</li>
   </ul>
 
   <h2>6. Children's Privacy</h2>
-  <p>Screen Tax is not intended for use by anyone under the age of 18. We do not knowingly collect information from minors. If you believe a minor has used the App, please contact us at <a href="mailto:jordanr@invert-able.com">jordanr@invert-able.com</a>.</p>
+  <p>Screen Tax is not intended for use by anyone under the age of 18. We do not knowingly collect information from minors. If you believe a minor has used the App, please contact us at <a href="mailto:admin@invert-able.com">admin@invert-able.com</a>.</p>
 
   <h2>7. Security</h2>
   <p>We take reasonable precautions to protect the limited data that transits our backend, including HTTPS encryption for all API communication. However, no method of transmission over the internet is 100% secure.</p>
@@ -186,14 +175,14 @@
   <ul>
     <li>Delete specific days of usage data from Settings → Data.</li>
     <li>Update or remove your payment card at any time.</li>
-    <li>Contact us to request deletion of your account and any backend-stored data.</li>
+    <li>Contact us to request deletion of your payment customer record and charge history.</li>
   </ul>
 
   <h2>9. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time. Material changes will be communicated within the App. Continued use after changes take effect constitutes acceptance of the revised policy.</p>
 
   <h2>10. Contact</h2>
-  <p>Questions or concerns? Reach us at <a href="mailto:jordanr@invert-able.com">jordanr@invert-able.com</a>.</p>
+  <p>Questions or concerns? Reach us at <a href="mailto:admin@invert-able.com">admin@invert-able.com</a>.</p>
 
 </main>
 
