@@ -87,7 +87,7 @@
   <p>This Privacy Policy explains how Invert LLC, the operator of Screen Tax ("we," "us," or "our"), collects, uses, and protects information when you use our mobile application. We built Screen Tax with a minimal-data philosophy — your detailed screen time data stays on your device.</p>
 
   <div class="callout">
-    <strong>The short version:</strong> Your per-app screen time data never leaves your phone. We have no user accounts and do not collect your email address or a password. We send only a token identifying your payment customer, your monthly charge amount, and crash diagnostics. Details below.
+    <strong>The short version:</strong> Your per-app screen time data never leaves your phone. We have no user accounts or passwords. We send only a token identifying your payment customer, your monthly charge amount, the email address you give for receipts and billing notices (kept by Stripe), and crash diagnostics. Details below.
   </div>
 
   <h2>1. Information We Collect</h2>
@@ -117,6 +117,11 @@
         <td>On your device (DataStore). Our backend receives a token naming the Customer ID with each charge request</td>
       </tr>
       <tr>
+        <td><strong>Email Address</strong></td>
+        <td>The email you enter when you save a card, used for receipts, a copy of your terms, a yearly reminder of those terms, and billing and service notices. Product update emails are sent only if you opt in, and each includes a way to unsubscribe</td>
+        <td>On your Stripe customer record, and on your device. You can change it in Settings &rarr; Payment</td>
+      </tr>
+      <tr>
         <td><strong>Monthly Charge Amount</strong></td>
         <td>The dollar amount of a completed month, sent only at the moment a charge is initiated</td>
         <td>Our backend server (Railway) — used to process that charge</td>
@@ -129,7 +134,7 @@
       <tr>
         <td><strong>Crash &amp; Diagnostic Data</strong></td>
         <td>Crash reports and error traces, which include your monthly charge amount</td>
-        <td>Google Firebase Crashlytics and Google Analytics for Firebase</td>
+        <td>Google Firebase Crashlytics</td>
       </tr>
     </tbody>
   </table>
@@ -153,7 +158,8 @@
 
   <h2>4. Third-Party Services</h2>
   <p><strong>Stripe</strong> — We use Stripe to process all payments. When you set up a card, Stripe collects and stores your payment information directly. We receive only a Customer ID and card display info (last 4 digits, brand) in return. Stripe's Privacy Policy is available at <a href="https://stripe.com/privacy" target="_blank">stripe.com/privacy</a>.</p>
-  <p><strong>Google Firebase</strong> — We use Firebase Crashlytics for crash reporting and Google Analytics for Firebase. Crash reports include your monthly charge amount. Google's privacy practices are described at <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>.</p>
+  <p><strong>Resend</strong> — Emails from Screen Tax (your terms and the yearly reminder) are sent through Resend, an email delivery service, which receives your email address and the message only to deliver it. Receipts are sent by Stripe.</p>
+  <p><strong>Google Firebase</strong> — We use Firebase Crashlytics for crash reporting and Firebase Cloud Messaging to deliver occasional announcements about the App. Cloud Messaging assigns your installation a random push token, which Google uses only to deliver those notifications; it is not linked to your email or payment details. Screen Tax does not use Google Analytics for Firebase or the advertising ID. Crash reports include your monthly charge amount. Google's privacy practices are described at <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>.</p>
   <p>We do not use advertising networks or cross-app tracking services.</p>
 
   <h2>5. Data Retention</h2>
